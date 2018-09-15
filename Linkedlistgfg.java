@@ -6,8 +6,8 @@ class Linkedlistgfg {
 		LinkedList<Integer> original_list=new LinkedList<Integer>(); 
 		LinkedList<Integer> even_list = new LinkedList<Integer>(); 
 		LinkedList<Integer> odd_list = new LinkedList<Integer>();
-		LinkedList<Integer> final_list = new LinkedList<Integer>();  
-		 
+		int test = ob.nextInt();  
+		
 		int flag=0; 
 		while(flag==0) {  
 			System.out.println("1. Enter Element \n 2.Exit "); 
@@ -33,10 +33,9 @@ class Linkedlistgfg {
 				odd_list.add(element);
 			}
 		} 
-		final_list.addAll(even_list);
-		final_list.addAll(odd_list); 
+		even_list.addAll(odd_list); 
 		System.out.println("*** Final Linked List is ****"); 
-		System.out.println(final_list); 
+		System.out.println(even_list); 
 	}
 	
 }
