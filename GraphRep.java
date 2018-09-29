@@ -24,8 +24,8 @@ class GraphRep {
 				int src = ob.nextInt();
 				System.out.println("Enter the destination edge "); 
 				int dest = ob.nextInt(); 
-				adjlist[src-1].addFirst(dest); 
-				adjlist[dest-1].addFirst(src); 
+				adjlist[src-1].addFirst(dest-1); 
+				adjlist[dest-1].addFirst(src-1); 
 			} 
 			if(choice==2){  
 				flag=1;
@@ -33,10 +33,8 @@ class GraphRep {
 		} 
 		System.out.println("Your Graph looks like"); 
 		for(int i=0;i<v;i++){   
-			System.out.println("Adjacency list of vertex "+(i+1));
 			int maxsize=adjlist[i].size(); 
-			System.out.println("Size of first Vertex is "+maxsize); 
-			System.out.print((i+1)+"->");
+			System.out.println("Size of first Vertex is "+maxsize);
 			for(int j=0;j<maxsize;j++){  
 				System.out.print(adjlist[i].get(j)+"->");
 			}  
