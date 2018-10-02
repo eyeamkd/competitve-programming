@@ -34,7 +34,7 @@ class QueueImpStack {
  		 		
  		 	} 
  		 	if(choice==3){  
- 		 		System.out.println("Element at the top of the stack is "+stack1.peek());
+ 		 		System.out.println("Element at the top of the Queue is "+stack1.peek());
  		 	}  
  		 	if(choice==4){  
  		 		System.out.println("Bubye!"); 
